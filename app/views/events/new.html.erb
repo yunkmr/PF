@@ -1,4 +1,61 @@
-<h1>New Event</h1>
+<section class="get-in-touch">
+  <h1>イベント情報入力</h1>
+  <form class="contact-form row">
+    <div class="form-field col x-30">
+      <label class="label" for="date">日付</label>
+      <input id="date" class="input-text js-input" type="date" required>
+    </div>
+    <div class="form-field col x-20">
+      <label class="label" for="open_time">開場時間</label>
+      <input id="open_time" class="input-text js-input" type="time" >
+    </div>
+    <div class="form-field col x-20">
+      <label class="label" for="start_time">開演時間</label>
+      <input id="start_time" class="input-text js-input" type="time" >
+    </div>
+    <div class="form-field col x-20">
+      <label class="label" for="end_time">終演時間</label>
+      <input id="end_time" class="input-text js-input" type="time" >
+    </div>
+    <div class="form-field col x-100">
+      <label class="label" for="event">イベント名</label>
+      <input id="event" class="input-text js-input" type="text" required>
+    </div>
+    <div class="form-field col x-50">
+      <label class="label" for="place">場所</label>
+      <input id="place" class="input-text js-input" type="text" >
+    </div>
+    <div class="form-field col x-50">
+      <label class="label" for="seat">座席</label>
+      <input id="seat" class="input-text js-input" type="text" >
+    </div>
+    <div class="form-field col x-100">
+      <label class="label" for="with_people">同行者</label>
+      <input id="with_people" class="input-text js-input" type="text" >
+    </div>
+    <div class="form-field col x-50">
+      <label class="label" for="fashion_image">服装</label>
+      <input id="fashion_image" type="file" accept="image/jpeg, image/png">
+    </div>
+    <div class="form-field col x-100">
+      <label class="label" for="memo">メモ</label>
+      <input id="memo" class="input-text js-input" type="textarea" rows="10" >
+    </div>
+    <div class="form-field col x-50">
+      <div class="link_text">持ち物リスト
+        <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <div class="form-field col x-50">
+      <div class="link_text">グッズ購入リスト
+        <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <div class="form-field col x-100">
+      <button class="submit-btn" type="button">登録する</button>
+    </div>
+  </form>
+</section>
 
 <%= render 'form', event: @event %>
 
