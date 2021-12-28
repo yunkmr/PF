@@ -14,3 +14,18 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+
+$(".l-app_navigation").click(function () {//ボタンがクリックされたら
+  $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+    $(".l-app_navigation").toggleClass('menu-active-complete');//ナビゲーションにmenu-active-completeクラスを付与
+    $(".l-menu-title").toggleClass('menu-active-complete');
+    $(".l-menu-contents").toggleClass('menu-active-complete');
+});
+
+$(".l-menu-index a").click(function () {//ナビゲーションのリンクがクリックされたら
+    $(".l-app_navigation").removeClass('active');//ボタンの activeクラスを除去し
+    $(".l-app_navigation").removeClass('menu-active-complete');//ナビゲーションのmenu-active-completeクラスも除去
+    $(".l-menu-title").removeClass('menu-active-complete');
+    $(".l-menu-contents").removeClass('menu-active-complete');
+});
