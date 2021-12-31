@@ -156,14 +156,6 @@ textarea {
   font-weight: 400;
 }
 
-/* .l-menu-title .jp {
-  transition: 1s all;
-}
-.l-menu-title .en {
-  opacity: 0;
-  transition: 1s all;
-} */
-
 .l-menu-title .jp span {
   display: block;
 }
@@ -261,26 +253,6 @@ p {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
 }
-
-/*==================================================
-アコーディオンのためのcss
-===================================*/
-
-/*アコーディオン全体*/
-// .accordion-area{
-//     list-style: none;
-//     width: 96%;
-//     max-width: 900px;
-//     margin:0 auto;
-// }
-
-// .accordion-area li{
-//     margin: 10px 0;
-// }
-
-// .accordion-area section {
-//   border: 1px solid #ccc;
-// }
 
 /*アコーディオンタイトル*/
 .l-menu-index_page-title {
