@@ -15,6 +15,9 @@
 //= require popper
 //= require bootstrap-sprockets
 
+//= require moment
+//= require fullcalendar
+
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
@@ -63,4 +66,24 @@ $(document).on('turbolinks:load', function() {
   //     $(".l-menu-title").removeClass('menu-active-complete');
   //     $(".l-menu-contents").removeClass('menu-active-complete');
   // });
+});
+
+
+$(function () {
+    $(document).on('turbolinks:load', function () {
+        function eventCalendar() {
+            return $('#calendar').fullCalendar({});
+        };
+        function clearCalendar() {
+            $('#calendar').html('');
+        };
+        $(document).on('turbolinks:load', function () {
+          eventCalendar();
+        });
+        $(document).on('turbolinks:before-cache', clearCalendar);
+        //以下を追加
+        $('#calendar').fullCalendar({
+          events: '/seminars.json'
+        });
+    });
 });
