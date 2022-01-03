@@ -1,24 +1,31 @@
-# README
+#
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+ライブ等のイベントを管理することのできるサイト
 
-Things you may want to cover:
+### サイトテーマ
+参加するイベントの情報を管理
 
-* Ruby version
+### テーマを選んだ理由
+ある日、友達から楽しみにしていたイベントのチケット代を振り込むのを忘れていて悲しかったと言う話を聞きました。
+私自身、コンサートに行くことが好きですが、チケット代を払うのを忘れそうになって肝を冷やした事があります。
+イベントに参加するまでを楽しく、そして大事なことは忘れないよう管理するサイトがあれば良いなと思い、このテーマにしました。
 
-* System dependencies
+### ターゲットユーザ
+参加するイベント情報を記録しておきたい人
 
-* Configuration
+### 主な利用シーン
+イベントが発表された時にチケットを購入する前
 
-* Database creation
+## 設計書
 
-* Database initialization
 
-* How to run the test suite
+## チャレンジ要素一覧
+<https://docs.google.com/spreadsheets/d/1E4Quehglf9PxM1XTE-ft2X5-hJ5dmoJhsI-UJlgzVmY/edit#gid=0>
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JSライブラリ：jQuery
+- IDE：Cloud9
